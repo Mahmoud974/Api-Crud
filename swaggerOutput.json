@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "A simple CRUD API application using Node.js, Express, and MongoDB"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "components": {
+    "schemas": {
+      "Todo": {
+        "type": "object",
+        "required": [
+          "title",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The auto-generated id of the todo"
+          },
+          "title": {
+            "type": "string",
+            "description": "The title of the todo"
+          },
+          "description": {
+            "type": "string",
+            "description": "The description of the todo"
+          }
+        },
+        "example": {
+          "id": "60b6c9f8c8e8d9b5d8b4f1d4",
+          "title": "Sample Todo",
+          "description": "This is a sample todo item"
+        }
+      }
+    }
+  },
+  "paths": {},
+  "tags": []
+}
